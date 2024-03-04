@@ -184,6 +184,7 @@ group("gn_all") {
 
     if (use_blink) {
       deps += [
+        "//theseus:theseus_runner",
         "//cc:cc_unittests",
         "//components/policy:policy_templates",
         "//components/url_formatter/tools:format_url",
