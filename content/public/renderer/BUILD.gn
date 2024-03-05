@@ -22,7 +22,7 @@ if (is_component_build) {
 }
 target(link_target_type, "renderer_sources") {
   # External code should depend on via ":renderer" above.
-  visibility = [ "//content/*" ]
+  visibility = [ "//content/*", "//theseus/*" ]
 
   sources = [
     "chrome_object_extensions_utils.cc",

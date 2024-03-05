@@ -68,6 +68,7 @@ source_set("common") {
   # build.
   visibility = [
     "//content/*",
+    "//theseus/*",
     "//tools/ipc_fuzzer/message_replay:ipc_fuzzer_replay",
   ]
 
@@ -539,7 +540,7 @@ group("for_content_tests") {
 
 mojom("mojo_bindings") {
   # This interface is internal to content.
-  visibility = [ "//content/*" ]
+  visibility = [ "//content/*", "//theseus/*" ]
 
   disable_variants = true
 
